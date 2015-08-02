@@ -1,2 +1,2 @@
 # rfinn06.github.io
-My DBC 0 Phase GitHub Page
+My DBC Phase 0 GitHub Page
