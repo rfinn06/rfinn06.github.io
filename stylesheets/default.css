@@ -1,4 +1,57 @@
 header {
-font: right;
-font-size: 22em;
+  font-size: 4em;
+  margin: auto;
+  padding: 0% 0% 0% 0%;
+  left: -10em;
 }
+
+#nav-1 {
+  display: block;
+  font-size: 1.5em;
+  border: none;
+  top: -100em;
+}
+
+#li-1 {
+  margin: auto;
+  display: inline-table;
+  position: relative;
+  padding: 0% 5% 0% 5%;
+  left: -4em;
+}
+
+* {
+  font-family: Courier New;
+}
+
+html {
+  background-color: #6C7A88;
+  margin: none;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+a:link {
+  color: #000000;
+}
+
+a:hover {
+  color:#15FF23;
+}
+
+nav {
+  border: none;
+  margin: auto;
+  padding: 0% 0% 0% 0%;
+}
+
+footer {
+  position: absolute;
+  top: 42.5em;
+  font-size: .9em;
+}
+
+
