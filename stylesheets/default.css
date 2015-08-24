@@ -1,5 +1,5 @@
 header {
-  font-size: 4em;
+  font-size: 3em;
   margin: auto;
   padding: 0% 0% 0% 0%;
   left: -10em;
@@ -49,8 +49,8 @@ nav {
 }
 
 footer {
-  position: absolute;
-  bottom: -10em;
+  position: fixed;
+  bottom: -1px;
   font-size: .9em;
 }
 
