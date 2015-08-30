@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>My Blog Post</title>
+ <link rel="stylesheet" type="text/css" href="/stylesheets/default.css">
+ <link rel="stylesheet" type="text/css" href="/stylesheets/blog-template.css">
+ <link href='http://fonts.googleapis.com/css?family=Shadows+Into+Light|Righteous' rel='stylesheet' type='text/css'>
+</head>
+<header><a href="../index.html">Ryan Finn</a></header>
+<nav id="nav-1">
+  <ul id="id-1">
+    <li id="li-1"><a href="about.html">About Me</a></li>
+    <li id="li-1"><a href="blog-index.html">Blog Index</a></li>
+    <li id="li-1"><a href="contact.html">Contact</a></li>
+  </ul>
+</nav>
+<header>Thoughts from Ryan Finn</header>
+<section id="secb">
+  <h1>Building a Ruby Class</h1> <!-- Enter title of post here --> <!-- Enter subtitle -->
+    <h2>8/30/15</h2> <!-- Enter published date here -->
+</section>
+<section>
+  <h2>Ruby</h2>
+  <p>Classes in Ruby are well suited to modeling the real world.  In a class you can create new objects that have specified chracteristics and methods.  In this post I will build a class that models pizza.  Yes, pizza.</p>
+<!-- HTML generated using hilite.me --><div style="background: #111111; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%"><span style="color: #fb660a; font-weight: bold">class</span> <span style="color: #ffffff">Pizza</span>
+
+  <span style="color: #fb660a; font-weight: bold">def</span> <span style="color: #ff0086; font-weight: bold">initialize</span>
+    <span style="color: #fb660a">@size</span> <span style="color: #ffffff">=</span> <span style="color: #ffffff">size</span>
+    <span style="color: #fb660a">@toppings</span> <span style="color: #ffffff">=</span> <span style="color: #ffffff">toppings</span>
+    <span style="color: #fb660a">@cheese</span> <span style="color: #ffffff">=</span> <span style="color: #ffffff">cheese</span>
+  <span style="color: #fb660a; font-weight: bold">end</span>
+
+  <span style="color: #fb660a; font-weight: bold">def</span> <span style="color: #ff0086; font-weight: bold">size</span>
+    <span style="color: #fb660a">@size</span> <span style="color: #ffffff">=</span> <span style="color: #ffffff">[</span><span style="color: #0086d2">&quot;Small&quot;</span><span style="color: #ffffff">,</span> <span style="color: #0086d2">&quot;Meduim&quot;</span><span style="color: #ffffff">,</span> <span style="color: #0086d2">&quot;Large&quot;</span><span style="color: #ffffff">]</span>
+  <span style="color: #fb660a; font-weight: bold">end</span>
+
+  <span style="color: #fb660a; font-weight: bold">def</span> <span style="color: #ff0086; font-weight: bold">toppings</span>
+    <span style="color: #fb660a">@toppings</span> <span style="color: #ffffff">=</span> <span style="color: #ffffff">[</span><span style="color: #0086d2">&quot;Mushrooms&quot;</span><span style="color: #ffffff">,</span> <span style="color: #0086d2">&quot;Onions&quot;</span><span style="color: #ffffff">,</span> <span style="color: #0086d2">&quot;Green Peppers&quot;</span><span style="color: #ffffff">,</span> <span style="color: #0086d2">&quot;Olives&quot;</span><span style="color: #ffffff">,</span> <span style="color: #0086d2">&quot;Pepperoni&quot;</span><span style="color: #ffffff">,</span> <span style="color: #0086d2">&quot;Sausage&quot;</span><span style="color: #ffffff">]</span>
+  <span style="color: #fb660a; font-weight: bold">end</span>
+
+  <span style="color: #fb660a; font-weight: bold">def</span> <span style="color: #ff0086; font-weight: bold">cheese</span>
+    <span style="color: #fb660a">@cheese</span> <span style="color: #ffffff">=</span> <span style="color: #ffffff">[</span><span style="color: #0086d2">&quot;Mozzarella&quot;</span><span style="color: #ffffff">,</span> <span style="color: #0086d2">&quot;American&quot;</span><span style="color: #ffffff">,</span> <span style="color: #0086d2">&quot;Cheddar&quot;</span><span style="color: #ffffff">]</span>
+  <span style="color: #fb660a; font-weight: bold">end</span>
+
+  <span style="color: #fb660a; font-weight: bold">def</span> <span style="color: #ff0086; font-weight: bold">suggested</span>
+    <span style="color: #ffffff">suggested_size</span> <span style="color: #ffffff">=</span> <span style="color: #fb660a">@size</span><span style="color: #ffffff">.sample</span>
+    <span style="color: #ffffff">suggested_toppings</span> <span style="color: #ffffff">=</span> <span style="color: #fb660a">@toppings</span><span style="color: #ffffff">.sample(</span><span style="color: #0086f7; font-weight: bold">3</span><span style="color: #ffffff">)</span>
+    <span style="color: #ffffff">suggested_cheese</span> <span style="color: #ffffff">=</span> <span style="color: #fb660a">@cheese</span><span style="color: #ffffff">.sample</span>
+    <span style="color: #ffffff">puts</span> <span style="color: #0086d2">&quot;Your suggested pizza is a #{</span><span style="color: #ffffff">suggested_size</span><span style="color: #0086d2">} with #{</span><span style="color: #ffffff">suggested_toppings</span><span style="color: #0086d2">} and #{</span><span style="color: #ffffff">suggested_cheese</span><span style="color: #0086d2">} cheese!&quot;</span>
+  <span style="color: #fb660a; font-weight: bold">end</span>
+
+<span style="color: #fb660a; font-weight: bold">end</span>
+
+<span style="color: #ffffff">pizza</span> <span style="color: #ffffff">=</span> <span style="color: #0086d2">Pizza</span><span style="color: #ffffff">.new</span>
+
+<span style="color: #ffffff">pizza.suggested</span>
+</pre></div>
+
+<p>So we created the class and initialized it with certain attributes.  In addition to defining what the attributes of our pizza class are, we also created a method to make use of these attributes.  I enjoy eating pizza, but sometimes have a hard time deciding what to get on it.  To solve this we create a method that will create a suggestion for the type of pizza to get.  The method "suggested" will call upon the attributes of the pizza class and build us a suggested pizza to order.  My life just got a little bit easier.</p>
+
+  <!-- Enter body of blog post here -->
+</section>
+<section id="secb">
+<footer>
+  <p>Copyright Ryan Finn 2015</p>
+</footer>
+</html>
