@@ -49,7 +49,7 @@ nav {
 }
 
 footer {
-  position: absolute;
+  position: relative;
   bottom: -2px;
   font-size: .9em;
 }
